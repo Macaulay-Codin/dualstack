@@ -1,0 +1,26 @@
+global:
+  scrape_interval: 30s           # Standard interval for production
+  evaluation_interval: 30s
+  scrape_timeout: 10s
+
+  external_labels:
+    cluster: 'dualstack'
+    environment: 'production'
+
+scrape_configs:
+  - job_name: 'dualstack-api'
+    static_configs:
+      - targets: ['backend:8000']  # Docker service name in production
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+    # Authentication for /metrics endpoint.
+    # Set METRICS_API_KEY on the backend and use the same value here.
+    # Prometheus does not support env var interpolation — use envsubst:
+    #   envsubst < prometheus.prod.yml > prometheus.resolved.yml
+    authorization:
+      type: Bearer
+      credentials: '${PROMETHEUS_BEARER_TOKEN}'
+
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']

@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "deny": [
+      "Read path:**/.env",
+      "Read path:**/.env.*",
+      "Read path:**/credentials.json",
+      "Read path:**/secrets.yaml",
+      "Read path:**/.pypirc",
+      "Read path:**/.npmrc",
+      "Edit path:**/.env",
+      "Edit path:**/.env.*",
+      "Edit path:**/credentials.json",
+      "Edit path:**/secrets.yaml",
+      "Edit path:**/.pypirc",
+      "Edit path:**/.npmrc",
+      "Write path:**/.env",
+      "Write path:**/.env.*",
+      "Write path:**/credentials.json",
+      "Write path:**/secrets.yaml",
+      "Write path:**/.pypirc",
+      "Write path:**/.npmrc"
+    ]
+  }
+}

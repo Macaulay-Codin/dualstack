@@ -1,0 +1,51 @@
+# Web framework
+fastapi==0.135.1
+starlette==0.50.0
+uvicorn==0.40.0
+pydantic==2.12.5
+pydantic-settings==2.13.1
+fastapi-clerk-auth==0.0.9
+
+# HTTP client
+httpx==0.28.1
+
+# Database
+SQLAlchemy==2.0.48
+aiosqlite==0.22.1
+greenlet==3.3.0
+sqlalchemy-libsql==0.2.0
+
+# Config
+python-dotenv==1.2.2
+python-multipart==0.0.22
+
+# Payments
+stripe==14.4.1
+
+# Logging
+structlog==25.5.0
+python-json-logger==2.0.7
+
+# Metrics
+prometheus-client==0.21.0
+
+# Auth (JWT)
+PyJWT==2.12.0
+
+# Rate limiting
+slowapi==0.1.9
+
+# Migrations
+alembic==1.18.4
+
+# Email
+resend==2.26.0
+
+# Object storage
+boto3==1.42.31
+
+# Background jobs
+APScheduler==3.11.2
+
+# Security pins (transitive dependencies)
+pyasn1>=0.6.3,<1.0

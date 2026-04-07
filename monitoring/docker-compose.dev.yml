@@ -1,0 +1,20 @@
+services:
+  prometheus:
+    command:
+      - '--config.file=/etc/prometheus/prometheus.dev.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=7d'  # Shorter retention for dev
+    networks:
+      - monitoring
+      - host  # Access to host network for localhost:8000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  fluent-bit:
+    environment:
+      - LOKI_HOST=loki
+
+networks:
+  host:
+    external: true
+    name: host
