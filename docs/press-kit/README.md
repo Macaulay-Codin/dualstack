@@ -119,14 +119,23 @@ Frontend at http://localhost:3000. API at http://localhost:8000. Grafana at http
 
 ## Screenshots
 
-_Screenshot capture pending. Run `make dev`, log in, exercise the flows below, drop captures here._
+1. **GitHub Repo Page** `press-01-github-repo.png`
+   ![GitHub Repo](press-01-github-repo.png)
 
-1. **Landing Page** `press-01-landing.png`
-2. **Dashboard** `press-02-dashboard.png`
-3. **Items CRUD** `press-03-items.png`
-4. **Billing Portal Entry** `press-04-billing.png`
-5. **Admin User Management** `press-05-admin.png`
-6. **Grafana Dashboard** `press-06-grafana.png`
+2. **Tech Stack Table** `press-02-tech-stack.png`
+   ![Tech Stack](press-02-tech-stack.png)
+
+3. **API Endpoints** `press-03-api-endpoints.png`
+   ![API Endpoints](press-03-api-endpoints.png)
+
+4. **Health Endpoint** `press-04-health.png`
+   ![Health](press-04-health.png)
+
+5. **Quickstart** `press-05-quickstart.png`
+   ![Quickstart](press-05-quickstart.png)
+
+6. **Security** `press-06-security.png`
+   ![Security](press-06-security.png)
 
 ---
 
